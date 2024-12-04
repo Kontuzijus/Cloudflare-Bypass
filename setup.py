@@ -1,17 +1,18 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+from setuptools import setup, find_packages
 
-[project]
-name = "Cloudflare-Bypass"
-version = "0.1"
-description = "A tool to bypass Cloudflare protection."
-authors = [
-    { name = "LOBYXLYX", email = "author@example.com" }
-]
-readme = "README.md"  # Optional, if a README.md exists
-requires-python = ">=3.11.8"
-dependencies = []  # Add dependencies like ["requests", "numpy"]
-
-[tool.setuptools.packages.find]
-where = ["."]
+setup(
+    name="Cloudflare-Bypass",  # Replace with the desired package name
+    version="0.1",  # Replace with the correct version
+    author="Author Name",  # Replace with the author's name
+    author_email="author@example.com",  # Replace with the author's email
+    description="A tool to bypass Cloudflare protection.",
+    url="https://github.com/Kontuzijus/Cloudflare-Bypass",  # Link to the GitHub repository
+    packages=find_packages(),  # Automatically find Python packages in the directory
+    install_requires=[],  # List required dependencies here, e.g., ['requests']
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",  # Replace with the appropriate license
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.11',  # Specify the minimum Python version
+)
