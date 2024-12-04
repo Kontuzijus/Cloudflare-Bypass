@@ -15,4 +15,6 @@ dependencies = []  # Add dependencies like ["requests", "numpy"]
 
 [tool.setuptools.packages.find]
 where = ["."]
+
+[tool.setuptools.package-data]
 Cloudflare_Bypass = ["*.js"]
