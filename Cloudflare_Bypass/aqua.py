@@ -11,9 +11,9 @@ import subprocess
 import threading
 
 from dataclasses import dataclass
-from wb_base_data import wbBaseData
-from interactive_data import CF_Parser, CF_Interactive
-from orchestrate_full_reverse import (
+from Cloudflare_Bypass.wb_base_data import wbBaseData
+from Cloudflare_Bypass.interactive_data import CF_Parser, CF_Interactive
+from Cloudflare_Bypass.orchestrate_full_reverse import (
     OrchestrateJS, 
     VM_Automation,  
     ReversedObjects
