@@ -180,7 +180,7 @@ class CF_MetaData:
             time.sleep(0.1)
 
         thread.join()
-        open('../cloudflare-data/cf_code.txt', 'w').write(chl_code)
+        open('cf_code.txt', 'w').write(chl_code)
         return chl_code
 
     def parse_challenge_auto(self, siteKey) -> tuple[list[str], str, list[str], str, str]:

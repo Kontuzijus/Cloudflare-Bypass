@@ -14,7 +14,7 @@ from javascript import require
 jsdom = require('jsdom')
 vm = require('vm')
 node_fetch = require('node-fetch')
-PATH = 'cloudflare-data/orchestrate.json'
+PATH = 'orchestrate.json'
 reversed_funcs = execjs.compile(open('cf_reversed_funcs.js', 'r').read())
 
 cK = 'b'
@@ -167,7 +167,7 @@ class VM_Automation:
             #ray = ClearanceBase.cf_ray
             #timestamp = ClearanceBase.encoded_timestamp
 
-            with open('cloudflare-data/clearance_base.html', 'r') as f:
+            with open('clearance_base.html', 'r') as f:
                 html_code = f.read()#.replace('CF_RAY', ray).replace('TIMESTAMP', timestamp)
             return html_code
         return ''
