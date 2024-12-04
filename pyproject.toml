@@ -7,7 +7,7 @@ name = "Cloudflare-Bypass"
 version = "0.1"
 description = "A tool to bypass Cloudflare protection."
 authors = [
-    { name = "LOBYXLYX", email = "author@example.com" }
+    { name = "Vata", email = "author@example.com" }
 ]
 readme = "README.md"  # Optional, if a README.md exists
 requires-python = ">=3.11"

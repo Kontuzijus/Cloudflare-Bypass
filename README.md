@@ -8,20 +8,18 @@ pip install javascript
 ```
 
 # Example
-```python
-from aqua import CF_Solver
 
+```python
+from worker.aqua import CF_Solver
 
 cf = CF_Solver('https://discord.com')
 cookie = cf.cookie()
 print(cookie)
 
-
 # other
 cf = CF_Solver('https://tempail.com')
 cookie2 = cf.cookie()
 print(cookie2)
-
 
 # follow up requests
 response = cf.client.get(url=url, timeout=10)

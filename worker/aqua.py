@@ -180,11 +180,11 @@ class CF_MetaData:
             time.sleep(0.1)
 
         thread.join()
-        open('cloudflare-data/cf_code.txt', 'w').write(chl_code)
+        open('../cloudflare-data/cf_code.txt', 'w').write(chl_code)
         return chl_code
 
     def parse_challenge_auto(self, siteKey) -> tuple[list[str], str, list[str], str, str]:
-        cf_reversed_js = execjs.compile(open('cf_reversed_funcs.js', 'r').read())
+        cf_reversed_js = execjs.compile(open('../cf_reversed_funcs.js', 'r').read())
         l = cf_reversed_js.call('l')
         ov2_t_url = f'https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/{l}/{siteKey}/dark/fbE/normal/auto/'
         self.clientRequest.headers.update(self.update_sec_header('iframe'))
